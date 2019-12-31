@@ -423,17 +423,17 @@ nav:before {
      [ 05 Start Showcase ]
 -----------------------------------------------------------------*/
 
-#showcase {
-  height: 98vh;
-  background-image: linear-gradient(to right bottom,
-  rgba(50,139,207, 0.8), rgba(161,218,213, 0.8)), url(../img/showcasebg.jpg);
-  background-size: cover;
-  background-position: center;
-  margin-top: 5.6ems;
-  background-attachment:fixed;
-  clip-path: ellipse(150% 100% at 50% 0);
-  -webkit-clip-path: ellipse(150% 100% at 50% 0);
-}
+//#showcase {
+//  height: 98vh;
+//  background-image: linear-gradient(to right bottom,
+//  rgba(50,139,207, 0.8), rgba(161,218,213, 0.8)), url(../img/showcasebg.jpg);
+//  background-size: cover;
+//  background-position: center;
+//  //margin-top: 5.6 em;
+//  background-attachment:fixed;
+//  clip-path: ellipse(150% 100% at 50% 0);
+//  -webkit-clip-path: ellipse(150% 100% at 50% 0);
+//}
 
 .showcase-caption {
   position: relative;
@@ -534,7 +534,7 @@ nav:before {
 }
 
 .features-section-2-col-1 {
-  background-image: url(../img/hero.jpg);
+  //background-image: url(../img/hero.jpg);
   background-position: center;
   height: 500px;
 }
@@ -1238,8 +1238,8 @@ figure.blog-item i {
   font-size: 32px;
   opacity: 0;
   z-index: 2;
-  -webkit-transition-delay: 0;
-  transition-delay: 0;
+  //-webkit-transition-delay: 0;
+  //transition-delay: 0;
 }
 figure.blog-item h3 {
   margin: 0 0 10px;

@@ -30,8 +30,8 @@ Rails.application.configure do
   config.assets.compile = true
   config.assets.precompile = true
   config.serve_static_assets = true
-  config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.svg)
-  config.assets.precompile += %w(slick.css component.css style.css works.css styleie9.css)
+  #config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.svg)
+  #config.assets.precompile += %w(slick.css component.css style.css works.css styleie9.css)
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
@@ -94,7 +94,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp

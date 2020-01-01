@@ -1,6 +1,6 @@
 
 <!--<link rel="stylesheet" type="text/css" href="login.css" media="screen" />-->
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name),class: "col-xs-6 col-sm-8 col-lg-10") do |f| %>
   <h2>Login</h2>
   <div class="field">
     <%= f.email_field :email, autofocus: true, autocomplete: "email",placeholder: "Email" %>

@@ -1,0 +1,5 @@
+<%@images.each do |img| %>
+  <li><%= p img.split("app/assets/images/").last %></li>
+
+  <%=image_tag img.split("app/assets/images/").last %>
+<% end %>

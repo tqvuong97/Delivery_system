@@ -1,27 +1,64 @@
+<style>
+  body{
+    background-image: url("../assets/car1.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+</style>
 
-<!--<link rel="stylesheet" type="text/css" href="login.css" media="screen" />-->
-<%= form_for(resource, as: resource_name, url: session_path(resource_name),class: "col-xs-6 col-sm-8 col-lg-10") do |f| %>
-  <h2>Login</h2>
-  <div class="field">
-    <%= f.email_field :email, autofocus: true, autocomplete: "email",placeholder: "Email" %>
-  </div>
+<div class="container">
 
-  <div class="field">
-    <%= f.password_field :password, autocomplete: "current-password",placeholder: "Password" %>
-  </div>
+    <div class="row justify-content-md-center">
+      <div class="col-md-1 col-sm-4">
+<!--        <div class="container circle-form-log">-->
+<!--          <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">-->
+<!--            <circle cx="170" cy="170" r="160" stroke="#E2007C"/>-->
+<!--            <circle cx="170" cy="170" r="135" stroke="#404041"/>-->
+<!--            <circle cx="170" cy="170" r="110" stroke="#E2007C"/>-->
+<!--            <circle cx="170" cy="170" r="85" stroke="#404041"/>-->
+<!--          </svg>-->
+<!--        </div>-->
+      </div>
+      <div class="col-lg-auto">
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name),class: "col-xs-6 col-sm-8 col-lg-10") do |f| %>
+          <h2>Login</h2>
+          <div class="field">
+            <%= f.email_field :email, autofocus: true, autocomplete: "email",placeholder: "Email" %>
+          </div>
 
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <label style="color: #34495e">Remember me</label>
+          <div class="field">
+            <%= f.password_field :password, autocomplete: "current-password",placeholder: "Password" %>
+          </div>
 
+          <% if devise_mapping.rememberable? -%>
+            <div class="field">
+              <%= f.check_box :remember_me %>
+              <label style="color: #34495e">Remember me</label>
+
+            </div>
+          <% end -%>
+
+          <div class="actions">
+            <%= f.submit "Log in" %>
+          </div>
+          <%= render "users/shared/links" %>
+        <% end %>
+      </div>
+<!--      <div class="col-md-2">-->
+<!--        <div class="container circle-form-log">-->
+<!--          <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">-->
+<!--            <circle cx="170" cy="170" r="160" stroke="#E2007C"/>-->
+<!--            <circle cx="170" cy="170" r="135" stroke="#404041"/>-->
+<!--            <circle cx="170" cy="170" r="110" stroke="#E2007C"/>-->
+<!--            <circle cx="170" cy="170" r="85" stroke="#404041"/>-->
+<!--          </svg>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
-  <% end -%>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-  <%= render "users/shared/links" %>
-<% end %>
+</div>
 
 

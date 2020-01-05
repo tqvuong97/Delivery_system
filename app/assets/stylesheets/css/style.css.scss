@@ -216,6 +216,9 @@ nav a {
   text-transform: uppercase;
   margin-right: 1rem;
 }
+nav{
+  margin: 0px;
+}
 
 .navbar-default{
   border:0;
@@ -286,6 +289,10 @@ a.navbar-brand {
 .navbar-default .navbar-nav>li>a:hover {
   color: #ffffff;
 }
+div#navbarSupportedContent ul.navbar-nav li:hover{
+  background-color: #0c5460;
+
+}
 
 .navbar-default .navbar-nav>li>a:active {
   color: #0dd;
@@ -308,6 +315,7 @@ a.navbar-brand {
 }
 
 nav:before {
+
     content: '';
     position: absolute;
     top: 0;
@@ -343,10 +351,12 @@ nav:before {
   color: #fff;
 }
 
-@media (max-width: 705.98px) {
+
+
+@media (max-width: 700px) {
 
   nav ul {
-    margin-top: -60px;
+    //margin-top: -60px;
     text-align: center;
   }
 
@@ -360,6 +370,7 @@ nav:before {
   .navbar-light .navbar-nav .nav-link:hover{
     color: #000;
   }
+
 
  }
 
@@ -422,23 +433,25 @@ nav:before {
 /* ----------------------------------------------------------------
      [ 05 Start Showcase ]
 -----------------------------------------------------------------*/
-
-//#showcase {
-//  height: 98vh;
-//  background-image: linear-gradient(to right bottom,
-//  rgba(50,139,207, 0.8), rgba(161,218,213, 0.8)), url(../img/showcasebg.jpg);
-//  background-size: cover;
-//  background-position: center;
-//  //margin-top: 5.6 em;
-//  background-attachment:fixed;
-//  clip-path: ellipse(150% 100% at 50% 0);
-//  -webkit-clip-path: ellipse(150% 100% at 50% 0);
-//}
+div#showcase{
+  height: 35em;
+}
+#showcase {
+  height: 98vh;
+  background-image: linear-gradient(to right bottom,
+  rgba(50,139,207, 0.8), rgba(158, 196, 250, 0.8)), url(delivery-car.jpg);
+  background-size: cover;
+  background-position: center;
+  //margin-top: 50px;
+  background-attachment:fixed;
+  clip-path: ellipse(150% 100% at 50% 0);
+  -webkit-clip-path: ellipse(150% 100% at 50% 0);
+}
 
 .showcase-caption {
   position: relative;
   text-align: center;
-  top: 200px;
+  top: 30px;
 }
 
 .showcase-caption h4{
@@ -490,10 +503,29 @@ nav:before {
 /* ----------------------------------------------------------------
      [ 06 Start Features ]
 -----------------------------------------------------------------*/
+.card{
+  text-align: center;
+}
+.card-header{
+
+  font-size: 40px;
+  font-weight: bold;
+}
+.card-body {
+
+  font-size: 30px;
+}
+div.feature-box{
+  height: 300px;
+}
+div.feature-box i{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
 
 #features {
     background: #fff;
-    padding-top: 70px;
+    padding-top: 30px;
     margin-bottom: 80px;
 }
 
@@ -530,13 +562,13 @@ nav:before {
 }
 
 .features-section-2 {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .features-section-2-col-1 {
   //background-image: url(../img/hero.jpg);
   background-position: center;
-  height: 500px;
+  height: 300px;
 }
 
 .features-section-2-col-2 {
@@ -597,6 +629,7 @@ nav:before {
   background: transparent;
   transition: all ease .5s;
   border: 1px solid rgba(31,181,172,.9);
+  height: 300px;
 }
 .folded-corner:hover{
 	background-color: rgba(31,181,172,.9);
@@ -634,7 +667,9 @@ nav:before {
     color: #ffffff;
     transform: rotate(360deg) scale(1.2);
 }
-
+h3.item-title{
+  margin: 10px;
+}
 
 .fa-icon-image{
 	color: rgba(31,181,172,.9);
@@ -1464,7 +1499,7 @@ iframe {
 //  -webkit-clip-path: polygon(51% 46%, 100% 73%, 100% 100%, 0 100%, 0 70%);
 //  clip-path: polygon(51% 46%, 100% 73%, 100% 100%, 0 100%, 0 70%);
 //}
-//
+
 //.footer__box {
 //  padding-top: 150px;
 //}

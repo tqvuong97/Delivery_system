@@ -1,21 +1,23 @@
-
+body{
+  height: 100%;
+}
 //div.container.block-form{
 //
 //  position: absolute;
 //}
 .new_user ,.edit_user{
-    width: 100%;
-    padding: 40px;
-    //position: absolute;
-    top: 50%;
-
-    left: 50%;
-    //transform: translate(-50%,-50%);
-    background: linear-gradient(-140deg, #7cccc5 15%, #2c7dbc 70%);
+    //width: 100%;
+    //padding: 40px;
+    ////position: absolute;
+    //top: 50%;
+    //
+    //left: 50%;
+    ////transform: translate(-50%,-50%);
+    //background: linear-gradient(-140deg, #7cccc5 15%, #2c7dbc 70%);
     margin-top: 10%;
 
     text-align: center;
-    border-radius: 20px;
+    //border-radius: 20px;
 }
 .new_user h2,.edit_user h2{
     color: #34495e;

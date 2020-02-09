@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Link route:</strong>
+  <%= @bus.link_route %>
+</p>
+
+<p>
+  <strong>Bus code:</strong>
+  <%= @bus.bus_code %>
+</p>
+
+<p>
+  <strong>Route:</strong>
+  <%= @bus.route %>
+</p>
+
+<p>
+  <strong>Arrival 1:</strong>
+  <%= @bus.arrival_1 %>
+</p>
+
+<p>
+  <strong>Arrival 2:</strong>
+  <%= @bus.arrival_2 %>
+</p>
+
+<p>
+  <strong>Undertaking unit:</strong>
+  <%= @bus.undertaking_unit %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @bus.phone %>
+</p>
+
+<p>
+  <strong>Type of operation:</strong>
+  <%= @bus.type_of_operation %>
+</p>
+
+<p>
+  <strong>Distance:</strong>
+  <%= @bus.distance %>
+</p>
+
+<p>
+  <strong>Range of bus:</strong>
+  <%= @bus.range_of_bus %>
+</p>
+
+<p>
+  <strong>Uptime:</strong>
+  <%= @bus.uptime %>
+</p>
+
+<p>
+  <strong>Fare:</strong>
+  <%= @bus.fare %>
+</p>
+
+<p>
+  <strong>Quantity trip:</strong>
+  <%= @bus.quantity_trip %>
+</p>
+
+<p>
+  <strong>Trip time:</strong>
+  <%= @bus.trip_time %>
+</p>
+
+<p>
+  <strong>Trip spacing:</strong>
+  <%= @bus.trip_spacing %>
+</p>
+
+<%= link_to 'Edit', edit_bus_path(@bus) %> |
+<%= link_to 'Back', buses_path %>

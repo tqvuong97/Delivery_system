@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :orders
+  resources :buses
   devise_for :users
   root to: 'home_pages#home'
   get "test",to:'home_pages#test'

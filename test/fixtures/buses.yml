@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  link_route: MyText
+  bus_code: MyText
+  route: MyText
+  arrival_1: MyText
+  arrival_2: MyText
+  undertaking_unit: MyText
+  phone: MyText
+  type_of_operation: MyText
+  distance: 1.5
+  range_of_bus: MyText
+  uptime: MyText
+  fare: MyText
+  quantity_trip: MyText
+  trip_time: MyText
+  trip_spacing: MyText
+
+two:
+  link_route: MyText
+  bus_code: MyText
+  route: MyText
+  arrival_1: MyText
+  arrival_2: MyText
+  undertaking_unit: MyText
+  phone: MyText
+  type_of_operation: MyText
+  distance: 1.5
+  range_of_bus: MyText
+  uptime: MyText
+  fare: MyText
+  quantity_trip: MyText
+  trip_time: MyText
+  trip_spacing: MyText

@@ -1,0 +1,92 @@
+<%= form_with(model: bus, local: true) do |form| %>
+  <% if bus.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bus.errors.count, "error") %> prohibited this bus from being saved:</h2>
+
+      <ul>
+      <% bus.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :link_route %>
+    <%= form.text_area :link_route %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bus_code %>
+    <%= form.text_area :bus_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :route %>
+    <%= form.text_area :route %>
+  </div>
+
+  <div class="field">
+    <%= form.label :arrival_1 %>
+    <%= form.text_area :arrival_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :arrival_2 %>
+    <%= form.text_area :arrival_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :undertaking_unit %>
+    <%= form.text_area :undertaking_unit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_area :phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_of_operation %>
+    <%= form.text_area :type_of_operation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :distance %>
+    <%= form.text_field :distance %>
+  </div>
+
+  <div class="field">
+    <%= form.label :range_of_bus %>
+    <%= form.text_area :range_of_bus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :uptime %>
+    <%= form.text_area :uptime %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fare %>
+    <%= form.text_area :fare %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity_trip %>
+    <%= form.text_area :quantity_trip %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trip_time %>
+    <%= form.text_area :trip_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trip_spacing %>
+    <%= form.text_area :trip_spacing %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

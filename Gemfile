@@ -69,3 +69,6 @@ gem 'nexmo'
 gem 'carrierwave'
 gem 'mini_magick'
 gem "rails_admin"
+gem "roo"
+gem "kaminari"
+gem "activerecord-import"

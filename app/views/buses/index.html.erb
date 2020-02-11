@@ -1,8 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Buses</h1>
-
-<table>
+<div>
+  <h4>Import data</h4>
+  <%= form_tag import_buses_path, multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag "Import" %>
+  <% end %>
+</div>
+<table class="table-striped">
   <thead>
     <tr>
       <th>Link route</th>
@@ -51,5 +57,5 @@
 </table>
 
 <br>
-
+<%= paginate @buses %>
 <%= link_to 'New Bus', new_bus_path %>

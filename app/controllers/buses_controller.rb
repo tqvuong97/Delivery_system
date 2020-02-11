@@ -1,12 +1,15 @@
 class BusesController < ApplicationController
   before_action :set_bus, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /buses
   # GET /buses.json
   def index
-    @buses = Bus.all
+    @buses = Bus.order(:bus_code).page params[:page]
   end
-
+  def import
+    Bus.import_file params[:file]
+    redirect_to buses_path, notice: "Data imported"
+  end
   # GET /buses/1
   # GET /buses/1.json
   def show

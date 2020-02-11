@@ -11,10 +11,10 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :code %>
-    <%= form.text_field :code %>
-  </div>
+<!--  <div class="field">-->
+    <%#= form.label :code %>
+    <%#= form.text_field :code %>
+<!--  </div>-->
 
   <div class="field">
     <%= form.label :des_from %>
@@ -27,10 +27,17 @@
   </div>
 
   <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
+    <%= form.label :status %>
+    <%= form.text_field :status %>
   </div>
-
+  <div class="field">
+  <%= form.fields_for :items do |builder|%>
+    <fieldset>
+      <%=builder.label :name,"name" %>
+      <%=builder.text_field :name %>
+    </fieldset>
+  <%end %>
+  </div>
   <div class="actions">
     <%= form.submit %>
   </div>

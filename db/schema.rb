@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_09_164700) do
+ActiveRecord::Schema.define(version: 2020_02_11_144334) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,17 @@ ActiveRecord::Schema.define(version: 2020_02_09_164700) do
     t.text "trip_spacing"
   end
 
+  create_table "items", force: :cascade do |t|
+    t.string "name"
+    t.string "unit"
+    t.bigint "price"
+    t.bigint "total"
+    t.bigint "order_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["order_id"], name: "index_items_on_order_id"
+  end
+
   create_table "orders", force: :cascade do |t|
     t.string "code"
     t.text "des_from"
@@ -42,6 +53,7 @@ ActiveRecord::Schema.define(version: 2020_02_09_164700) do
     t.datetime "updated_at", null: false
     t.bigint "fee_ship"
     t.bigint "total"
+    t.string "status"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
@@ -60,5 +72,6 @@ ActiveRecord::Schema.define(version: 2020_02_09_164700) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "items", "orders"
   add_foreign_key "orders", "users"
 end

@@ -1,128 +1,129 @@
-body{
-  height: 100%;
-}
-//div.container.block-form{
-//
-//  position: absolute;
+
+//body{
+//  height: 100%;
 //}
-.new_user ,.edit_user{
-    //width: 100%;
-    //padding: 40px;
-    ////position: absolute;
-    //top: 50%;
-    //
-    //left: 50%;
-    ////transform: translate(-50%,-50%);
-    //background: linear-gradient(-140deg, #7cccc5 15%, #2c7dbc 70%);
-    margin-top: 10%;
-
-    text-align: center;
-    //border-radius: 20px;
-}
-.new_user h2,.edit_user h2{
-    color: #34495e;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-weight: bold;
-    font-size: xx-large;
-}
-.new_user input[type = "email"],.new_user input[type = "password"]
-,.edit_user input[type = "email"],.edit_user input[type = "password"]{
-    border:0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #3498db;
-    padding: 14px 10px;
-    width: 70%;
-    outline: none;
-    color: #34495e;
-    border-radius: 24px;
-    transition: 0.25s;
-    font-size: large;
-}
-.new_user input[type = "email"]:focus,.new_user input[type = "password"]:focus,
-.edit_user input[type = "email"]:focus,.edit_user input[type = "password"]:focus{
-    width: 100%;
-    border-color: #2ecc71;
-}
-.new_user input[type = "submit"],.edit_user input[type = "submit"]{
-    border:0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #2ecc71;
-    padding: 14px 40px;
-    outline: none;
-    color: #218838;
-    border-radius: 24px;
-    transition: 0.25s;
-    cursor: pointer;
-    font-size: x-large;
-}
-.new_user input[type = "submit"]:hover,.edit_user input[type = "submit"]:hover{
-    background: #2ecc71;
-}
-.link_si{
-    font-size: large;
-    text-align: center;
-    color: #34495e;
-}
-
-
-.container.circle-form-log {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  //min-height: 100vh;
-  background-color: #ededed;
-  //margin-top: 100%;
-}
-
-.loader {
-  max-width: 15rem;
-  width: 100%;
-  //height: auto;
-  stroke-linecap: round;
-}
-
-circle {
-  fill: none;
-  stroke-width: 3.5;
-  animation-name: preloader;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  transform-origin: 170px 170px;
-  will-change: transform;
-
-  &:nth-of-type(1) {
-    stroke-dasharray: 550px;
-  }
-
-  &:nth-of-type(2) {
-    stroke-dasharray: 500px;
-  }
-
-  &:nth-of-type(3) {
-    stroke-dasharray: 450px;
-  }
-
-  &:nth-of-type(4) {
-    stroke-dasharray: 300px;
-  }
-
-  @for $i from 1 through 4 {
-    &:nth-of-type(#{$i}) {
-      animation-delay: -#{$i * 0.15}s;
-    }
-  }
-}
-
-@keyframes preloader {
-  50% {
-    transform: rotate(360deg);
-  }
-}
+////div.container.block-form{
+////
+////  position: absolute;
+////}
+//.new_user ,.edit_user{
+//    //width: 100%;
+//    //padding: 40px;
+//    ////position: absolute;
+//    //top: 50%;
+//    //
+//    //left: 50%;
+//    ////transform: translate(-50%,-50%);
+//    //background: linear-gradient(-140deg, #7cccc5 15%, #2c7dbc 70%);
+//    margin-top: 10%;
+//
+//    text-align: center;
+//    //border-radius: 20px;
+//}
+//.new_user h2,.edit_user h2{
+//    color: #34495e;
+//    text-transform: uppercase;
+//    font-weight: 500;
+//    font-weight: bold;
+//    font-size: xx-large;
+//}
+//.new_user input[type = "email"],.new_user input[type = "password"]
+//,.edit_user input[type = "email"],.edit_user input[type = "password"]{
+//    border:0;
+//    background: none;
+//    display: block;
+//    margin: 20px auto;
+//    text-align: center;
+//    border: 2px solid #3498db;
+//    padding: 14px 10px;
+//    width: 70%;
+//    outline: none;
+//    color: #34495e;
+//    border-radius: 24px;
+//    transition: 0.25s;
+//    font-size: large;
+//}
+//.new_user input[type = "email"]:focus,.new_user input[type = "password"]:focus,
+//.edit_user input[type = "email"]:focus,.edit_user input[type = "password"]:focus{
+//    width: 100%;
+//    border-color: #2ecc71;
+//}
+//.new_user input[type = "submit"],.edit_user input[type = "submit"]{
+//    border:0;
+//    background: none;
+//    display: block;
+//    margin: 20px auto;
+//    text-align: center;
+//    border: 2px solid #2ecc71;
+//    padding: 14px 40px;
+//    outline: none;
+//    color: #218838;
+//    border-radius: 24px;
+//    transition: 0.25s;
+//    cursor: pointer;
+//    font-size: x-large;
+//}
+//.new_user input[type = "submit"]:hover,.edit_user input[type = "submit"]:hover{
+//    background: #2ecc71;
+//}
+//.link_si{
+//    font-size: large;
+//    text-align: center;
+//    color: #34495e;
+//}
+//
+//
+//.container.circle-form-log {
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  //min-height: 100vh;
+//  background-color: #ededed;
+//  //margin-top: 100%;
+//}
+//
+//.loader {
+//  max-width: 15rem;
+//  width: 100%;
+//  //height: auto;
+//  stroke-linecap: round;
+//}
+//
+//circle {
+//  fill: none;
+//  stroke-width: 3.5;
+//  animation-name: preloader;
+//  animation-duration: 3s;
+//  animation-iteration-count: infinite;
+//  animation-timing-function: ease-in-out;
+//  transform-origin: 170px 170px;
+//  will-change: transform;
+//
+//  &:nth-of-type(1) {
+//    stroke-dasharray: 550px;
+//  }
+//
+//  &:nth-of-type(2) {
+//    stroke-dasharray: 500px;
+//  }
+//
+//  &:nth-of-type(3) {
+//    stroke-dasharray: 450px;
+//  }
+//
+//  &:nth-of-type(4) {
+//    stroke-dasharray: 300px;
+//  }
+//
+//  @for $i from 1 through 4 {
+//    &:nth-of-type(#{$i}) {
+//      animation-delay: -#{$i * 0.15}s;
+//    }
+//  }
+//}
+//
+//@keyframes preloader {
+//  50% {
+//    transform: rotate(360deg);
+//  }
+//}

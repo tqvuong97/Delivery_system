@@ -5,6 +5,7 @@ class BusesController < ApplicationController
   # GET /buses.json
   def index
     @buses = Bus.order(:bus_code).page params[:page]
+    @count_buses = Bus.count
   end
   def import
     Bus.import_file params[:file]

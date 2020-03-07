@@ -137,44 +137,41 @@
       <div class="card card-signin my-5">
         <div class="card-body">
           <h3 class="card-title text-center">SIGN UP</h3>
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+            <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+              <%= devise_error_messages! %>
 
-  <div class="form-label-group">
-    <%= f.email_field :email, autofocus: true, autocomplete: "email",placeholder: "Email" %>
-    <label for="user_email">Email</label>
-  </div>
+              <div class="form-label-group">
+                <%= f.email_field :email, autofocus: true, autocomplete: "email",placeholder: "Email" %>
+                <label for="user_email">Email</label>
+              </div>
 
-  <div class="form-label-group">
-    <%# if @minimum_password_length %>
-<!--      <em>(<%#= @minimum_password_length %> characters minimum)</em>-->
-    <%# end %>
-    <%= f.password_field :password, autocomplete: "new-password",placeholder: "Password" %>
-    <label for="user_password">Password</label>
-  </div>
-      <div class="form-label-group">
-        <%= f.password_field :password_confirmation, autocomplete: "new-password",placeholder: "Password confirmation" %>
-        <label for="user_password_confirmation">Confirm password</label>
-      </div>
-      <div class="form-label-group">
-        <%= f.text_field :full_name,placeholder: "Your name" %>
-        <label for="user_full_name">Your name</label>
-      </div>
-      <div class="form-label-group">
-        <%= f.text_field :address,placeholder: "Address" %>
-        <label for="user_address">Your address</label>
-      </div>
+              <div class="form-label-group">
+                <%# if @minimum_password_length %>
+            <!--      <em>(<%#= @minimum_password_length %> characters minimum)</em>-->
+                <%# end %>
+                <%= f.password_field :password, autocomplete: "new-password",placeholder: "Password" %>
+                <label for="user_password">Password</label>
+              </div>
+                  <div class="form-label-group">
+                    <%= f.password_field :password_confirmation, autocomplete: "new-password",placeholder: "Password confirmation" %>
+                    <label for="user_password_confirmation">Confirm password</label>
+                  </div>
+                  <div class="form-label-group">
+                    <%= f.text_field :full_name,placeholder: "Your name" %>
+                    <label for="user_full_name">Your name</label>
+                  </div>
+                  <div class="form-label-group">
+                    <%= f.text_field :address,placeholder: "Address" %>
+                    <label for="user_address">Your address</label>
+                  </div>
 
+                    <%= f.radio_button :role ,"owner"%> Owner <br>
+                    <%= f.radio_button :role ,"shipper"%> Shipper <br>
 
-
-
-
-
-  <div class="actions">
-    <%= f.submit "Sign up",class: "btn btn-lg btn-primary btn-block text-uppercase" %>
-  </div>
-<% end %>
-
+                  <div class="actions">
+                    <%= f.submit "Sign up",class: "btn btn-lg btn-primary btn-block text-uppercase" %>
+                  </div>
+                <% end %>
 <%#= render "users/shared/links" %>
         </div>
       </div>
